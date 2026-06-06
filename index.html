@@ -12,87 +12,119 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
+font-family:Arial, sans-serif;
 }
 
 body{
-font-family:Arial, sans-serif;
 line-height:1.7;
 color:#333;
 }
 
 header{
-background:#0B3D91;
+background:linear-gradient(135deg,#0B3D91,#123F7D);
 color:white;
-padding:70px 20px;
+padding:80px 20px;
 text-align:center;
 }
 
 header h1{
-font-size:42px;
+font-size:48px;
 margin-bottom:10px;
 }
 
-header p{
-font-size:18px;
+.tagline{
+font-size:24px;
+margin-bottom:20px;
 }
 
-.btn{
+.hero-btn{
 display:inline-block;
-margin-top:20px;
-padding:12px 25px;
 background:#25D366;
-color:white;
-text-decoration:none;
+padding:14px 28px;
 border-radius:5px;
+text-decoration:none;
+color:white;
 font-weight:bold;
 }
 
 .container{
-max-width:1100px;
+max-width:1200px;
 margin:auto;
-padding:50px 20px;
+padding:60px 20px;
 }
 
-h2{
+.section-title{
+text-align:center;
 color:#0B3D91;
-margin-bottom:20px;
+margin-bottom:40px;
+font-size:36px;
+}
+
+.about{
+display:flex;
+flex-wrap:wrap;
+gap:40px;
+align-items:center;
+}
+
+.profile{
+flex:1;
+min-width:300px;
+}
+
+.profile img{
+width:100%;
+max-width:350px;
+border-radius:12px;
+box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+
+.about-content{
+flex:2;
+min-width:300px;
 }
 
 .services{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-margin-top:20px;
+gap:25px;
 }
 
 .card{
-border:1px solid #ddd;
-padding:20px;
+padding:25px;
 border-radius:10px;
-background:#fff;
-box-shadow:0 2px 10px rgba(0,0,0,0.05);
+background:white;
+box-shadow:0 2px 15px rgba(0,0,0,.08);
 }
 
-.alt{
+.card h3{
+color:#0B3D91;
+margin-bottom:10px;
+}
+
+.bg{
 background:#f4f7fb;
 }
 
+.contact{
+background:#0B3D91;
+color:white;
+text-align:center;
+padding:60px 20px;
+}
+
 footer{
-background:#222;
+background:#111;
 color:white;
 text-align:center;
 padding:20px;
 }
 
-.contact-box{
-background:white;
-padding:25px;
-border-radius:10px;
-box-shadow:0 2px 10px rgba(0,0,0,0.08);
+ul{
+padding-left:20px;
 }
 
 </style>
-
 </head>
 
 <body>
@@ -101,74 +133,66 @@ box-shadow:0 2px 10px rgba(0,0,0,0.08);
 
 <h1>KUMAR NITISH & CO</h1>
 
-<p>Chartered Accountants</p>
+<p class="tagline">
+Chartered Accountants
+</p>
 
-<p>Your Trusted Partner in Taxation, Audit & Business Compliance</p>
+<p>
+Delivering Trusted Financial Solutions with Integrity, Professionalism and Excellence
+</p>
 
-<a class="btn" href="https://wa.me/917087726716">
-WhatsApp Us
+<br>
+
+<a class="hero-btn" href="https://wa.me/917087726716">
+WhatsApp Consultation
 </a>
 
 </header>
 
 <section class="container">
 
-<h2>About Us</h2>
+<h2 class="section-title">About the Firm</h2>
 
 <p>
-KUMAR NITISH & CO is a Chartered Accountancy Firm established on
-22 May 2026 with a commitment to providing high-quality professional
-services in the fields of Taxation, GST, Audit, Accounting,
-Corporate Compliance and Business Advisory.
-</p>
-
-<br>
-
-<p>
-We assist startups, MSMEs, companies, professionals and individual
-taxpayers in meeting their regulatory requirements while helping
-them focus on sustainable growth.
+KUMAR NITISH & CO is a Chartered Accountancy firm based in Amritsar, Punjab,
+providing professional services in Taxation, GST Compliance, Audit & Assurance,
+Accounting, Corporate Compliance, Financial Advisory and Banking Consultancy.
 </p>
 
 </section>
 
-<section class="alt">
+<section class="container bg">
 
-<div class="container">
+<h2 class="section-title">About the Proprietor</h2>
 
-<h2>Our Services</h2>
+<div class="about">
 
-<div class="services">
-
-<div class="card">
-<h3>GST Services</h3>
-<p>GST Registration, GST Return Filing, Annual Returns and Advisory Services.</p>
+<div class="profile">
+<img src="https://via.placeholder.com/350x420?text=CA+Nitish+Kumar" alt="CA Nitish Kumar">
 </div>
 
-<div class="card">
-<h3>Income Tax</h3>
-<p>Income Tax Return Filing, Tax Planning, TDS Compliance and Representation.</p>
-</div>
+<div class="about-content">
 
-<div class="card">
-<h3>Audit & Assurance</h3>
-<p>Statutory Audit, Internal Audit, Tax Audit and Compliance Reviews.</p>
-</div>
+<h3>CA Nitish Kumar (B.Com, ACA, JAIIB)</h3>
 
-<div class="card">
-<h3>Accounting Services</h3>
-<p>Bookkeeping, Financial Statements, MIS Reporting and Payroll Support.</p>
-</div>
+<p>
+A qualified Chartered Accountant and JAIIB-certified banking professional
+with experience across public sector and private sector banking institutions,
+including HDFC Bank and Yes Bank.
+</p>
 
-<div class="card">
-<h3>ROC Compliance</h3>
-<p>Company Incorporation, Annual Filing, Director KYC and Corporate Compliance.</p>
-</div>
+<p>
+Expertise includes credit appraisal, financial analysis, regulatory compliance,
+risk management, banking operations, taxation, audit and business advisory.
+</p>
 
-<div class="card">
-<h3>Business Advisory</h3>
-<p>Startup Advisory, MSME Registration, Project Reports and Loan Assistance.</p>
-</div>
+<h4>Professional Qualifications</h4>
+
+<ul>
+<li>Chartered Accountant (ACA)</li>
+<li>JAIIB Certified</li>
+<li>Bachelor of Commerce (B.Com)</li>
+</ul>
 
 </div>
 
@@ -178,53 +202,74 @@ them focus on sustainable growth.
 
 <section class="container">
 
-<h2>Why Choose Us</h2>
+<h2 class="section-title">Our Services</h2>
 
-<ul>
-<li>Professional Expertise</li>
-<li>Timely Compliance Support</li>
-<li>Personalized Attention</li>
-<li>Transparent Communication</li>
-<li>Technology Driven Services</li>
-<li>Ethical Professional Practices</li>
-</ul>
+<div class="services">
+
+<div class="card">
+<h3>Income Tax</h3>
+<p>ITR Filing, Tax Planning, TDS Compliance and Tax Advisory.</p>
+</div>
+
+<div class="card">
+<h3>GST Services</h3>
+<p>GST Registration, Return Filing and Compliance Support.</p>
+</div>
+
+<div class="card">
+<h3>Audit & Assurance</h3>
+<p>Statutory Audit, Tax Audit and Internal Audit Services.</p>
+</div>
+
+<div class="card">
+<h3>Accounting Services</h3>
+<p>Bookkeeping, MIS Reporting and Financial Statements.</p>
+</div>
+
+<div class="card">
+<h3>ROC Compliance</h3>
+<p>Company Incorporation and Annual ROC Filings.</p>
+</div>
+
+<div class="card">
+<h3>Bank Finance Consultancy</h3>
+<p>Project Reports, CMA Data and Loan Advisory Services.</p>
+</div>
+
+</div>
 
 </section>
 
-<section class="alt">
-
-<div class="container">
+<section class="contact">
 
 <h2>Contact Us</h2>
 
-<div class="contact-box">
+<p><strong>KUMAR NITISH & CO</strong></p>
 
-<p><strong>Firm:</strong> KUMAR NITISH & CO</p>
-
-<p><strong>Address:</strong><br>
-G-06, 19547 New Rose Avenue,<br>
-Mustafabad, Batala Road,<br>
-Near Power House,<br>
+<p>
+G-06, 19547 New Rose Avenue,
+Mustafabad, Batala Road,
+Near Power House,
 Amritsar – 143001, Punjab
 </p>
 
-<br>
+<p>
+📞 +91 70877 26716
+</p>
 
-<p><strong>Mobile:</strong> +91 70877 26716</p>
+<p>
+✉ kumarnitishandco@yahoo.com
+</p>
 
-<p><strong>Email:</strong> kumarnitishandco@yahoo.com</p>
-
-</div>
-
-</div>
+<p>
+🌐 www.kumarnitishco.com
+</p>
 
 </section>
 
 <footer>
 
-<p>
 © 2026 KUMAR NITISH & CO | Chartered Accountants
-</p>
 
 </footer>
 
