@@ -1,128 +1,195 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>KUMAR NITISH & CO | Chartered Accountants</title>
 
+<meta name="description" content="KUMAR NITISH & CO - Chartered Accountants providing GST, Income Tax, Audit, Accounting, Financial Advisory and Compliance Services.">
+
 <style>
-body{
-font-family:Arial,sans-serif;
+
+*{
 margin:0;
-background:#f5f7fa;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#f4f7fb;
+color:#333;
+line-height:1.8;
 }
 
 header{
-background:#0B3D91;
+background:linear-gradient(135deg,#0B3D91,#154cba);
 color:white;
 text-align:center;
-padding:20px;
+padding:40px 20px;
 }
 
 .logo{
-width:140px;
+width:170px;
 background:white;
 padding:10px;
 border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.15);
+}
+
+header h1{
+margin-top:20px;
+font-size:42px;
+}
+
+header p{
+font-size:20px;
+margin-top:10px;
 }
 
 nav{
 background:#072d6a;
-padding:12px;
+padding:15px;
 text-align:center;
 }
 
 nav a{
 color:white;
 text-decoration:none;
-margin:8px;
+margin:15px;
 font-weight:bold;
 }
 
 .hero{
-text-align:center;
-padding:40px 20px;
+padding:60px 20px;
 background:white;
+text-align:center;
 }
 
 .profile{
-width:220px;
-height:220px;
-border-radius:50%;
+width:280px;
+height:280px;
 object-fit:cover;
-border:5px solid #0B3D91;
+border-radius:50%;
+border:8px solid #0B3D91;
+box-shadow:0 0 20px rgba(0,0,0,0.15);
 }
 
-.section{
-max-width:1000px;
-margin:auto;
-padding:30px 20px;
+.hero h2{
+margin-top:25px;
+font-size:36px;
+color:#0B3D91;
 }
 
-.card{
-background:white;
-padding:20px;
-border-radius:10px;
-box-shadow:0 0 10px rgba(0,0,0,.1);
-margin-bottom:20px;
+.hero p{
+font-size:18px;
 }
 
 .btn{
 display:inline-block;
-padding:12px 25px;
+margin-top:20px;
+padding:14px 30px;
 background:#25D366;
 color:white;
 text-decoration:none;
-border-radius:6px;
-margin-top:15px;
+font-weight:bold;
+border-radius:8px;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:40px 20px;
+}
+
+.card{
+background:white;
+padding:30px;
+margin-bottom:25px;
+border-radius:12px;
+box-shadow:0 2px 12px rgba(0,0,0,0.08);
+}
+
+h2{
+color:#0B3D91;
+margin-bottom:15px;
+}
+
+ul{
+padding-left:25px;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.service-box{
+background:#f8fbff;
+padding:20px;
+border-left:5px solid #0B3D91;
+border-radius:8px;
+}
+
+.contact{
+text-align:center;
 }
 
 footer{
 background:#0B3D91;
 color:white;
-padding:20px;
 text-align:center;
+padding:30px;
+margin-top:40px;
 }
-</style>
 
+.quote{
+background:#0B3D91;
+color:white;
+padding:18px;
+border-radius:10px;
+text-align:center;
+font-size:18px;
+font-style:italic;
+margin-top:20px;
+}
+
+</style>
 </head>
 
 <body>
 
 <header>
 
-<img src="IMG_1813.jpeg" class="logo">
+<img src="IMG_1813.jpeg" alt="CA Logo" class="logo">
 
 <h1>KUMAR NITISH & CO</h1>
 
 <p>Chartered Accountants</p>
 
+<p>Your Trusted Partner in Taxation, Audit & Business Advisory</p>
+
 </header>
 
 <nav>
-
-<a href="#">Home</a>
-<a href="#">About</a>
-<a href="#">Services</a>
-<a href="#">Contact</a>
-
+<a href="#about">About</a>
+<a href="#proprietor">Proprietor</a>
+<a href="#services">Services</a>
+<a href="#contact">Contact</a>
 </nav>
 
 <section class="hero">
 
-<img src="IMG_1830.jpeg" class="profile">
+<img src="IMG_1830.jpeg" alt="CA Nitish Kumar" class="profile">
 
 <h2>CA Nitish Kumar</h2>
 
-<p>
-B.Com, ACA, JAIIB
-</p>
+<p>B.Com, ACA, JAIIB</p>
 
-<p>
-Trusted Partner in Taxation, GST, Audit,
-Accounting and Business Advisory.
-</p>
+<p>Founder & Proprietor</p>
 
 <a href="https://wa.me/917087726716" class="btn">
 WhatsApp Us
@@ -130,53 +197,137 @@ WhatsApp Us
 
 </section>
 
-<div class="section">
+<div class="container">
 
-<div class="card">
+<div class="card" id="about">
 
-<h2>About The Firm</h2>
+<h2>About Kumar Nitish & Co</h2>
 
 <p>
-Kumar Nitish & Co is a Chartered Accountancy Firm
-established on 22 May 2026 providing professional services
-in Taxation, GST Compliance, Audit, Accounting and
-Business Advisory.
+KUMAR NITISH & CO is a Chartered Accountancy Firm committed to delivering high-quality professional services with integrity, excellence and client-focused solutions.
+</p>
+
+<p>
+The firm specializes in Taxation, GST Compliance, Audit & Assurance, Accounting Services, Corporate Compliance, Financial Reporting, Business Advisory and Banking Consultancy.
+</p>
+
+<p>
+We aim to provide practical and result-oriented solutions that help businesses achieve regulatory compliance, financial discipline and sustainable growth.
 </p>
 
 </div>
 
-<div class="card">
+<div class="card" id="proprietor">
 
-<h2>Our Services</h2>
+<h2>About the Proprietor</h2>
+
+<p>
+CA Nitish Kumar is a qualified Chartered Accountant and JAIIB-certified banking professional with rich experience across the banking and financial services sector.
+</p>
+
+<p>
+Prior to establishing his professional practice, he worked with reputed institutions including HDFC Bank and Yes Bank, gaining valuable exposure in banking operations, credit appraisal, financial analysis, risk management and regulatory compliance.
+</p>
+
+<p>
+His professional journey combines the analytical expertise of a Chartered Accountant with practical banking experience, enabling him to provide holistic financial and business solutions to clients.
+</p>
+
+<p>
+He possesses strong knowledge in:
+</p>
 
 <ul>
-<li>GST Registration & Return Filing</li>
-<li>Income Tax Return Filing</li>
-<li>Tax Planning</li>
-<li>Accounting Services</li>
+<li>Financial Statement Analysis</li>
+<li>Credit Appraisal & Banking Finance</li>
+<li>Income Tax Advisory</li>
+<li>GST Compliance</li>
 <li>Audit & Assurance</li>
-<li>Business Advisory</li>
+<li>Risk Management</li>
+<li>Corporate Compliance</li>
+<li>Business Advisory Services</li>
+<li>Accounting & Financial Reporting</li>
 </ul>
 
 </div>
 
+<div class="card" id="services">
+
+<h2>Professional Services</h2>
+
+<div class="services">
+
+<div class="service-box">
+<h3>GST Services</h3>
+<p>GST Registration, Return Filing, Annual Returns, GST Advisory and Compliance Management.</p>
+</div>
+
+<div class="service-box">
+<h3>Income Tax</h3>
+<p>ITR Filing, Tax Planning, Tax Advisory and Representation before authorities.</p>
+</div>
+
+<div class="service-box">
+<h3>Audit & Assurance</h3>
+<p>Statutory Audit, Tax Audit, Internal Audit and Compliance Reviews.</p>
+</div>
+
+<div class="service-box">
+<h3>Accounting</h3>
+<p>Bookkeeping, Financial Statements, MIS Reporting and Outsourced Accounting.</p>
+</div>
+
+<div class="service-box">
+<h3>Business Advisory</h3>
+<p>Startup Advisory, Business Structuring and Financial Planning.</p>
+</div>
+
+<div class="service-box">
+<h3>Banking Consultancy</h3>
+<p>CMA Data, Project Reports, Loan Proposals and Credit Documentation.</p>
+</div>
+
+</div>
+
+<div class="quote">
+"Delivering Professional Excellence Through Knowledge, Integrity and Commitment."
+</div>
+
+</div>
+
 <div class="card">
+
+<h2>Why Choose Us?</h2>
+
+<ul>
+<li>Professional and Ethical Approach</li>
+<li>Personalized Client Service</li>
+<li>Strong Banking & Finance Expertise</li>
+<li>Timely Compliance Support</li>
+<li>Transparent Communication</li>
+<li>Practical Business Solutions</li>
+</ul>
+
+</div>
+
+<div class="card contact" id="contact">
 
 <h2>Contact Us</h2>
 
+<p><strong>KUMAR NITISH & CO</strong></p>
+
+<p>Chartered Accountants</p>
+
+<p>📞 Mobile: +91 7087726716</p>
+
+<p>📧 Email: kumarnitishandco@yahoo.com</p>
+
 <p>
-📞 7087726716
+📍 Amritsar, Punjab, India
 </p>
 
 <p>
-📧 kumarnitishandco@yahoo.com
-</p>
-
-<p>
-📍 G-06, 19547 New Rose Avenue,
-Mustafabad, Batala Road,
-Near Power House,
-Amritsar – 143001
+We welcome businesses, startups, professionals and individuals seeking reliable financial and compliance solutions.
 </p>
 
 </div>
@@ -188,6 +339,14 @@ Amritsar – 143001
 <h3>KUMAR NITISH & CO</h3>
 
 <p>Chartered Accountants</p>
+
+<p>
+GST | Income Tax | Audit | Accounting | Business Advisory
+</p>
+
+<p>
+© 2026 KUMAR NITISH & CO. All Rights Reserved.
+</p>
 
 </footer>
 
